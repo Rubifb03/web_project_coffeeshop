@@ -88,6 +88,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -100,6 +101,7 @@
   margin-bottom: 40px;
 }
 .header__adress {
+  margin-top: auto;
   margin-right: 80px;
   margin-bottom: 40px;
 }
@@ -139,14 +141,12 @@
   justify-content: center;
   margin-top: 80px;
   margin-bottom: 215px;
+  column-gap: 40px;
 }
 .recipes__iframe {
   border: none;
   width: 480px;
   height: 273px;
-}
-.recipes__video-item {
-  column-gap: 24px;
 }
 .recipes__video-caption {
   margin-top: 24px;
@@ -155,4 +155,89 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+}
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url("../images/background_reservation.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reservation__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+.form__admin {
+  height: 100vh;
+}
+.form__input-container {
+  max-width: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 120px;
+  border: #838383;
+}
+.form__label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.form__item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  height: 60px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  border: none;
+}
+.form__button {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 385px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #2f80ed;
+  border-radius: 4px;
+  border: none;
+}
+.form__button :hover {
+  opacity: 0.7;
+}
+
+.form__item::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+.form__checkbox {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
 }

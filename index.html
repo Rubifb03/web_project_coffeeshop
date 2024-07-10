@@ -43,13 +43,11 @@
           ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
           para darte energía y motivar tu creatividad.
         </p>
-
         <img
           src="./images/inside_coffee_shop.png"
           alt="Cafetería"
           class="header__image"
         />
-
         <div class="header__footer">
           <div class="header__schedules">
             <p class="header__paragraph">Horario:</p>
@@ -101,7 +99,68 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <form class="form__admin">
+            <fieldset class="form__input-container">
+              <label for="name" class="form__label">Nombre *</label>
+              <input
+                name="name"
+                type="text"
+                class="form__item form__item_el_name"
+                id="name"
+                placeholder="Nombre"
+                required
+              />
+              <label for="diners" class="form__label"
+                >Número de comensales *</label
+              >
+              <input
+                name="diners"
+                type="number"
+                min="1"
+                max="8"
+                class="form__item form__item_el_diners"
+                id="diners"
+                placeholder="1-8"
+                required
+              />
+              <label for="date-time" class="form__label">Fecha y hora *</label>
+              <input
+                name="date-time"
+                type="datetime-local"
+                class="form__item form__item_el_datetime"
+                id="date-time"
+                required
+              />
+              <label for="email" class="form__label"
+                >Tu correo electrónico *</label
+              >
+              <input
+                name="email"
+                type="emil"
+                class="form__item form__item_el_email"
+                id="email"
+                placeholder="email@email.com"
+                required
+              />
+              <button type="submit" class="form__button">
+                Reservar una mesa
+              </button>
+              <label
+                class="form__label form__label-checkbox"
+                for="terms-conditions"
+              >
+                <input
+                  type="checkbox"
+                  class="form__checkbox"
+                  id="terms-conditions"
+                  required
+                />Acepto los términos de uso
+              </label>
+            </fieldset>
+          </form>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
