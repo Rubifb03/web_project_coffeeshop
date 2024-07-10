@@ -101,13 +101,13 @@
         </section>
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
-          <form class="form__admin">
-            <fieldset class="form__input-container">
+          <form class="form form__reservation">
+            <fieldset class="form form__fielset">
               <label for="name" class="form__label">Nombre *</label>
               <input
                 name="name"
                 type="text"
-                class="form__item form__item_el_name"
+                class="form__input form__item_el_name"
                 id="name"
                 placeholder="Nombre"
                 required
@@ -120,7 +120,7 @@
                 type="number"
                 min="1"
                 max="8"
-                class="form__item form__item_el_diners"
+                class="form__input"
                 id="diners"
                 placeholder="1-8"
                 required
@@ -129,7 +129,7 @@
               <input
                 name="date-time"
                 type="datetime-local"
-                class="form__item form__item_el_datetime"
+                class="form__input"
                 id="date-time"
                 required
               />
@@ -138,8 +138,8 @@
               >
               <input
                 name="email"
-                type="emil"
-                class="form__item form__item_el_email"
+                type="email"
+                class="form__input"
                 id="email"
                 placeholder="email@email.com"
                 required
@@ -147,10 +147,7 @@
               <button type="submit" class="form__button">
                 Reservar una mesa
               </button>
-              <label
-                class="form__label form__label-checkbox"
-                for="terms-conditions"
-              >
+              <label class="form__label" for="terms-conditions">
                 <input
                   type="checkbox"
                   class="form__checkbox"
